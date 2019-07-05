@@ -31,6 +31,7 @@ namespace Login
             InitializeComponent();
         }
 
+        User user = new User();
       
         private void checkBoxHTML_CheckedChanged(object sender, EventArgs e)
         {
@@ -138,6 +139,16 @@ namespace Login
             {
                 php = false;
             }
+        }
+
+        private void btnSignIn_Click(object sender, EventArgs e)
+        {
+            firstName = txtBoxFName.Text;
+            lastName = txtBoxLName.Text;
+            email = txtBoxEmail.Text;
+
+            this.Hide();
+            user.Show();
         }
     }
 }
