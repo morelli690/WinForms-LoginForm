@@ -35,15 +35,16 @@
             this.txtBoxLName = new System.Windows.Forms.TextBox();
             this.txtBoxEmail = new System.Windows.Forms.TextBox();
             this.groupBox = new System.Windows.Forms.GroupBox();
-            this.chechBoxHTML = new System.Windows.Forms.CheckBox();
-            this.checkBoxCSS = new System.Windows.Forms.CheckBox();
-            this.checkBoxBootstrap = new System.Windows.Forms.CheckBox();
-            this.checkBoxCplusplus = new System.Windows.Forms.CheckBox();
-            this.checkBoxCsharp = new System.Windows.Forms.CheckBox();
-            this.checkBoxJava = new System.Windows.Forms.CheckBox();
-            this.checkBoxJS = new System.Windows.Forms.CheckBox();
-            this.checkBoxReact = new System.Windows.Forms.CheckBox();
             this.checkBoxPHP = new System.Windows.Forms.CheckBox();
+            this.checkBoxReact = new System.Windows.Forms.CheckBox();
+            this.checkBoxJS = new System.Windows.Forms.CheckBox();
+            this.checkBoxJava = new System.Windows.Forms.CheckBox();
+            this.checkBoxCsharp = new System.Windows.Forms.CheckBox();
+            this.checkBoxCplusplus = new System.Windows.Forms.CheckBox();
+            this.checkBoxBootstrap = new System.Windows.Forms.CheckBox();
+            this.checkBoxCSS = new System.Windows.Forms.CheckBox();
+            this.checkBoxHTML = new System.Windows.Forms.CheckBox();
+            this.btnSignIn = new System.Windows.Forms.Button();
             this.groupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,75 +109,36 @@
             this.groupBox.Controls.Add(this.checkBoxCplusplus);
             this.groupBox.Controls.Add(this.checkBoxBootstrap);
             this.groupBox.Controls.Add(this.checkBoxCSS);
-            this.groupBox.Controls.Add(this.chechBoxHTML);
+            this.groupBox.Controls.Add(this.checkBoxHTML);
             this.groupBox.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox.Location = new System.Drawing.Point(87, 232);
+            this.groupBox.Location = new System.Drawing.Point(87, 230);
             this.groupBox.Name = "groupBox";
-            this.groupBox.Size = new System.Drawing.Size(624, 219);
+            this.groupBox.Size = new System.Drawing.Size(624, 191);
             this.groupBox.TabIndex = 6;
             this.groupBox.TabStop = false;
             this.groupBox.Text = "Computer Skills";
             // 
-            // chechBoxHTML
+            // checkBoxPHP
             // 
-            this.chechBoxHTML.AutoSize = true;
-            this.chechBoxHTML.Location = new System.Drawing.Point(28, 67);
-            this.chechBoxHTML.Name = "chechBoxHTML";
-            this.chechBoxHTML.Size = new System.Drawing.Size(89, 30);
-            this.chechBoxHTML.TabIndex = 0;
-            this.chechBoxHTML.Text = "HTML";
-            this.chechBoxHTML.UseVisualStyleBackColor = true;
+            this.checkBoxPHP.AutoSize = true;
+            this.checkBoxPHP.Location = new System.Drawing.Point(438, 139);
+            this.checkBoxPHP.Name = "checkBoxPHP";
+            this.checkBoxPHP.Size = new System.Drawing.Size(71, 30);
+            this.checkBoxPHP.TabIndex = 8;
+            this.checkBoxPHP.Text = "PHP";
+            this.checkBoxPHP.UseVisualStyleBackColor = true;
+            this.checkBoxPHP.CheckedChanged += new System.EventHandler(this.checkBoxPHP_CheckedChanged);
             // 
-            // checkBoxCSS
+            // checkBoxReact
             // 
-            this.checkBoxCSS.AutoSize = true;
-            this.checkBoxCSS.Location = new System.Drawing.Point(28, 119);
-            this.checkBoxCSS.Name = "checkBoxCSS";
-            this.checkBoxCSS.Size = new System.Drawing.Size(66, 30);
-            this.checkBoxCSS.TabIndex = 1;
-            this.checkBoxCSS.Text = "CSS";
-            this.checkBoxCSS.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBootstrap
-            // 
-            this.checkBoxBootstrap.AutoSize = true;
-            this.checkBoxBootstrap.Location = new System.Drawing.Point(28, 170);
-            this.checkBoxBootstrap.Name = "checkBoxBootstrap";
-            this.checkBoxBootstrap.Size = new System.Drawing.Size(125, 30);
-            this.checkBoxBootstrap.TabIndex = 2;
-            this.checkBoxBootstrap.Text = "Bootsrtap";
-            this.checkBoxBootstrap.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCplusplus
-            // 
-            this.checkBoxCplusplus.AutoSize = true;
-            this.checkBoxCplusplus.Location = new System.Drawing.Point(246, 67);
-            this.checkBoxCplusplus.Name = "checkBoxCplusplus";
-            this.checkBoxCplusplus.Size = new System.Drawing.Size(72, 30);
-            this.checkBoxCplusplus.TabIndex = 3;
-            this.checkBoxCplusplus.Text = "C++";
-            this.checkBoxCplusplus.UseVisualStyleBackColor = true;
-            this.checkBoxCplusplus.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
-            // 
-            // checkBoxCsharp
-            // 
-            this.checkBoxCsharp.AutoSize = true;
-            this.checkBoxCsharp.Location = new System.Drawing.Point(246, 119);
-            this.checkBoxCsharp.Name = "checkBoxCsharp";
-            this.checkBoxCsharp.Size = new System.Drawing.Size(56, 30);
-            this.checkBoxCsharp.TabIndex = 4;
-            this.checkBoxCsharp.Text = "C#";
-            this.checkBoxCsharp.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxJava
-            // 
-            this.checkBoxJava.AutoSize = true;
-            this.checkBoxJava.Location = new System.Drawing.Point(246, 164);
-            this.checkBoxJava.Name = "checkBoxJava";
-            this.checkBoxJava.Size = new System.Drawing.Size(73, 30);
-            this.checkBoxJava.TabIndex = 5;
-            this.checkBoxJava.Text = "Java";
-            this.checkBoxJava.UseVisualStyleBackColor = true;
+            this.checkBoxReact.AutoSize = true;
+            this.checkBoxReact.Location = new System.Drawing.Point(438, 103);
+            this.checkBoxReact.Name = "checkBoxReact";
+            this.checkBoxReact.Size = new System.Drawing.Size(84, 30);
+            this.checkBoxReact.TabIndex = 7;
+            this.checkBoxReact.Text = "React";
+            this.checkBoxReact.UseVisualStyleBackColor = true;
+            this.checkBoxReact.CheckedChanged += new System.EventHandler(this.checkBoxReact_CheckedChanged);
             // 
             // checkBoxJS
             // 
@@ -187,33 +149,92 @@
             this.checkBoxJS.TabIndex = 6;
             this.checkBoxJS.Text = "Javascript";
             this.checkBoxJS.UseVisualStyleBackColor = true;
+            this.checkBoxJS.CheckedChanged += new System.EventHandler(this.checkBoxJS_CheckedChanged);
             // 
-            // checkBoxReact
+            // checkBoxJava
             // 
-            this.checkBoxReact.AutoSize = true;
-            this.checkBoxReact.Location = new System.Drawing.Point(438, 119);
-            this.checkBoxReact.Name = "checkBoxReact";
-            this.checkBoxReact.Size = new System.Drawing.Size(84, 30);
-            this.checkBoxReact.TabIndex = 7;
-            this.checkBoxReact.Text = "React";
-            this.checkBoxReact.UseVisualStyleBackColor = true;
+            this.checkBoxJava.AutoSize = true;
+            this.checkBoxJava.Location = new System.Drawing.Point(245, 139);
+            this.checkBoxJava.Name = "checkBoxJava";
+            this.checkBoxJava.Size = new System.Drawing.Size(73, 30);
+            this.checkBoxJava.TabIndex = 5;
+            this.checkBoxJava.Text = "Java";
+            this.checkBoxJava.UseVisualStyleBackColor = true;
+            this.checkBoxJava.CheckedChanged += new System.EventHandler(this.checkBoxJava_CheckedChanged);
             // 
-            // checkBoxPHP
+            // checkBoxCsharp
             // 
-            this.checkBoxPHP.AutoSize = true;
-            this.checkBoxPHP.Location = new System.Drawing.Point(438, 164);
-            this.checkBoxPHP.Name = "checkBoxPHP";
-            this.checkBoxPHP.Size = new System.Drawing.Size(71, 30);
-            this.checkBoxPHP.TabIndex = 8;
-            this.checkBoxPHP.Text = "PHP";
-            this.checkBoxPHP.UseVisualStyleBackColor = true;
-            this.checkBoxPHP.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
+            this.checkBoxCsharp.AutoSize = true;
+            this.checkBoxCsharp.Location = new System.Drawing.Point(246, 103);
+            this.checkBoxCsharp.Name = "checkBoxCsharp";
+            this.checkBoxCsharp.Size = new System.Drawing.Size(56, 30);
+            this.checkBoxCsharp.TabIndex = 4;
+            this.checkBoxCsharp.Text = "C#";
+            this.checkBoxCsharp.UseVisualStyleBackColor = true;
+            this.checkBoxCsharp.CheckedChanged += new System.EventHandler(this.checkBoxCsharp_CheckedChanged);
+            // 
+            // checkBoxCplusplus
+            // 
+            this.checkBoxCplusplus.AutoSize = true;
+            this.checkBoxCplusplus.Location = new System.Drawing.Point(246, 67);
+            this.checkBoxCplusplus.Name = "checkBoxCplusplus";
+            this.checkBoxCplusplus.Size = new System.Drawing.Size(72, 30);
+            this.checkBoxCplusplus.TabIndex = 3;
+            this.checkBoxCplusplus.Text = "C++";
+            this.checkBoxCplusplus.UseVisualStyleBackColor = true;
+            this.checkBoxCplusplus.CheckedChanged += new System.EventHandler(this.checkBoxCplusplus_CheckedChanged);
+            // 
+            // checkBoxBootstrap
+            // 
+            this.checkBoxBootstrap.AutoSize = true;
+            this.checkBoxBootstrap.Location = new System.Drawing.Point(28, 139);
+            this.checkBoxBootstrap.Name = "checkBoxBootstrap";
+            this.checkBoxBootstrap.Size = new System.Drawing.Size(125, 30);
+            this.checkBoxBootstrap.TabIndex = 2;
+            this.checkBoxBootstrap.Text = "Bootsrtap";
+            this.checkBoxBootstrap.UseVisualStyleBackColor = true;
+            this.checkBoxBootstrap.CheckedChanged += new System.EventHandler(this.checkBoxBootstrap_CheckedChanged);
+            // 
+            // checkBoxCSS
+            // 
+            this.checkBoxCSS.AutoSize = true;
+            this.checkBoxCSS.Location = new System.Drawing.Point(28, 103);
+            this.checkBoxCSS.Name = "checkBoxCSS";
+            this.checkBoxCSS.Size = new System.Drawing.Size(66, 30);
+            this.checkBoxCSS.TabIndex = 1;
+            this.checkBoxCSS.Text = "CSS";
+            this.checkBoxCSS.UseVisualStyleBackColor = true;
+            this.checkBoxCSS.CheckedChanged += new System.EventHandler(this.checkBoxCSS_CheckedChanged);
+            // 
+            // checkBoxHTML
+            // 
+            this.checkBoxHTML.AutoSize = true;
+            this.checkBoxHTML.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.checkBoxHTML.Location = new System.Drawing.Point(28, 67);
+            this.checkBoxHTML.Name = "checkBoxHTML";
+            this.checkBoxHTML.Size = new System.Drawing.Size(89, 30);
+            this.checkBoxHTML.TabIndex = 0;
+            this.checkBoxHTML.Text = "HTML";
+            this.checkBoxHTML.UseVisualStyleBackColor = true;
+            this.checkBoxHTML.CheckedChanged += new System.EventHandler(this.checkBoxHTML_CheckedChanged);
+            // 
+            // btnSignIn
+            // 
+            this.btnSignIn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnSignIn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignIn.Location = new System.Drawing.Point(611, 468);
+            this.btnSignIn.Name = "btnSignIn";
+            this.btnSignIn.Size = new System.Drawing.Size(100, 40);
+            this.btnSignIn.TabIndex = 7;
+            this.btnSignIn.Text = "Sign In";
+            this.btnSignIn.UseVisualStyleBackColor = false;
             // 
             // Signin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(819, 490);
+            this.ClientSize = new System.Drawing.Size(819, 558);
+            this.Controls.Add(this.btnSignIn);
             this.Controls.Add(this.groupBox);
             this.Controls.Add(this.txtBoxEmail);
             this.Controls.Add(this.txtBoxLName);
@@ -247,6 +268,7 @@
         private System.Windows.Forms.CheckBox checkBoxCplusplus;
         private System.Windows.Forms.CheckBox checkBoxBootstrap;
         private System.Windows.Forms.CheckBox checkBoxCSS;
-        private System.Windows.Forms.CheckBox chechBoxHTML;
+        private System.Windows.Forms.CheckBox checkBoxHTML;
+        private System.Windows.Forms.Button btnSignIn;
     }
 }
