@@ -33,5 +33,12 @@ namespace Login
         {
             lblHello.Text = "Hello New World!";
         }
+
+        private void btnLog_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+        }
     }
 }

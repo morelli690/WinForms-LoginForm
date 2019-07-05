@@ -31,6 +31,7 @@
             this.lblHello = new System.Windows.Forms.Label();
             this.btnSet = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.btnLog = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblHello
@@ -66,11 +67,24 @@
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // btnLog
+            // 
+            this.btnLog.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnLog.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLog.Location = new System.Drawing.Point(620, 340);
+            this.btnLog.Name = "btnLog";
+            this.btnLog.Size = new System.Drawing.Size(100, 40);
+            this.btnLog.TabIndex = 3;
+            this.btnLog.Text = "Log In";
+            this.btnLog.UseVisualStyleBackColor = false;
+            this.btnLog.Click += new System.EventHandler(this.btnLog_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLog);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSet);
             this.Controls.Add(this.lblHello);
@@ -87,6 +101,7 @@
         private System.Windows.Forms.Label lblHello;
         private System.Windows.Forms.Button btnSet;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnLog;
     }
 }
 
