@@ -70,6 +70,7 @@
             this.txtBoxPassword.Size = new System.Drawing.Size(354, 20);
             this.txtBoxPassword.TabIndex = 3;
             this.txtBoxPassword.UseSystemPasswordChar = true;
+            this.txtBoxPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxPassword_KeyPress);
             // 
             // btnLogin
             // 
