@@ -16,5 +16,22 @@ namespace Login
         {
             InitializeComponent();
         }
+
+        
+
+        private void btnSet_Click(object sender, EventArgs e)
+        {
+            lblHello.Text = "Hello New Life!";
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            lblHello.Text = "Noone can cancel you!";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            lblHello.Text = "Hello New World!";
+        }
     }
 }
