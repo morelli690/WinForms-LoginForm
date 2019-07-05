@@ -40,5 +40,12 @@ namespace Login
             LoginForm loginForm = new LoginForm();
             loginForm.Show();
         }
+
+        private void btnSignIn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Signin signin = new Signin();
+            signin.Show();
+        }
     }
 }
