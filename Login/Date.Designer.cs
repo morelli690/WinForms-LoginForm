@@ -35,6 +35,7 @@
             this.lblFourthDate = new System.Windows.Forms.Label();
             this.lblFifthDate = new System.Windows.Forms.Label();
             this.btnShow = new System.Windows.Forms.Button();
+            this.lblSixthDate = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // dateTimePicker1
@@ -108,11 +109,22 @@
             this.btnShow.UseVisualStyleBackColor = false;
             this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
+            // lblSixthDate
+            // 
+            this.lblSixthDate.AutoSize = true;
+            this.lblSixthDate.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSixthDate.Location = new System.Drawing.Point(106, 385);
+            this.lblSixthDate.Name = "lblSixthDate";
+            this.lblSixthDate.Size = new System.Drawing.Size(59, 22);
+            this.lblSixthDate.TabIndex = 7;
+            this.lblSixthDate.Text = "label6";
+            // 
             // Date
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 481);
+            this.Controls.Add(this.lblSixthDate);
             this.Controls.Add(this.btnShow);
             this.Controls.Add(this.lblFifthDate);
             this.Controls.Add(this.lblFourthDate);
@@ -136,5 +148,6 @@
         private System.Windows.Forms.Label lblFourthDate;
         private System.Windows.Forms.Label lblFifthDate;
         private System.Windows.Forms.Button btnShow;
+        private System.Windows.Forms.Label lblSixthDate;
     }
 }
