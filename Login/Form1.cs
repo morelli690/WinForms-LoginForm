@@ -47,5 +47,12 @@ namespace Login
             Signin signin = new Signin();
             signin.Show();
         }
+
+        private void btnDate_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Date date = new Date();
+            date.Show();
+        }
     }
 }

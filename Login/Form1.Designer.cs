@@ -33,6 +33,7 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnLog = new System.Windows.Forms.Button();
             this.btnSignIn = new System.Windows.Forms.Button();
+            this.btnDate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblHello
@@ -92,11 +93,25 @@
             this.btnSignIn.UseVisualStyleBackColor = false;
             this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
+            // btnDate
+            // 
+            this.btnDate.AutoSize = true;
+            this.btnDate.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnDate.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDate.Location = new System.Drawing.Point(536, 54);
+            this.btnDate.Name = "btnDate";
+            this.btnDate.Size = new System.Drawing.Size(163, 40);
+            this.btnDate.TabIndex = 5;
+            this.btnDate.Text = "Date and Time";
+            this.btnDate.UseVisualStyleBackColor = false;
+            this.btnDate.Click += new System.EventHandler(this.btnDate_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnDate);
             this.Controls.Add(this.btnSignIn);
             this.Controls.Add(this.btnLog);
             this.Controls.Add(this.btnCancel);
@@ -117,6 +132,7 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnLog;
         private System.Windows.Forms.Button btnSignIn;
+        private System.Windows.Forms.Button btnDate;
     }
 }
 
