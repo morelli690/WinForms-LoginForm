@@ -54,5 +54,12 @@ namespace Login
             Date date = new Date();
             date.Show();
         }
+
+        private void btnRadio_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Radio radio = new Radio();
+            radio.Show();
+        }
     }
 }
