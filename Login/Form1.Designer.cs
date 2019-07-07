@@ -36,12 +36,13 @@
             this.btnDate = new System.Windows.Forms.Button();
             this.btnRadio = new System.Windows.Forms.Button();
             this.btnDialog = new System.Windows.Forms.Button();
+            this.btnFlightApp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblHello
             // 
             this.lblHello.AutoSize = true;
-            this.lblHello.Location = new System.Drawing.Point(116, 81);
+            this.lblHello.Location = new System.Drawing.Point(90, 287);
             this.lblHello.Name = "lblHello";
             this.lblHello.Size = new System.Drawing.Size(35, 13);
             this.lblHello.TabIndex = 0;
@@ -51,7 +52,7 @@
             // 
             this.btnSet.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnSet.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSet.Location = new System.Drawing.Point(119, 340);
+            this.btnSet.Location = new System.Drawing.Point(296, 54);
             this.btnSet.Name = "btnSet";
             this.btnSet.Size = new System.Drawing.Size(100, 40);
             this.btnSet.TabIndex = 1;
@@ -63,7 +64,7 @@
             // 
             this.btnCancel.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(225, 340);
+            this.btnCancel.Location = new System.Drawing.Point(296, 110);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(100, 40);
             this.btnCancel.TabIndex = 2;
@@ -75,7 +76,7 @@
             // 
             this.btnLog.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnLog.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLog.Location = new System.Drawing.Point(536, 340);
+            this.btnLog.Location = new System.Drawing.Point(418, 110);
             this.btnLog.Name = "btnLog";
             this.btnLog.Size = new System.Drawing.Size(100, 40);
             this.btnLog.TabIndex = 3;
@@ -87,7 +88,7 @@
             // 
             this.btnSignIn.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnSignIn.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignIn.Location = new System.Drawing.Point(642, 340);
+            this.btnSignIn.Location = new System.Drawing.Point(418, 54);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(100, 40);
             this.btnSignIn.TabIndex = 4;
@@ -134,11 +135,25 @@
             this.btnDialog.UseVisualStyleBackColor = false;
             this.btnDialog.Click += new System.EventHandler(this.btnDialog_Click);
             // 
+            // btnFlightApp
+            // 
+            this.btnFlightApp.AutoSize = true;
+            this.btnFlightApp.BackColor = System.Drawing.Color.Green;
+            this.btnFlightApp.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFlightApp.Location = new System.Drawing.Point(296, 169);
+            this.btnFlightApp.Name = "btnFlightApp";
+            this.btnFlightApp.Size = new System.Drawing.Size(209, 36);
+            this.btnFlightApp.TabIndex = 8;
+            this.btnFlightApp.Text = "Flight Booking App";
+            this.btnFlightApp.UseVisualStyleBackColor = false;
+            this.btnFlightApp.Click += new System.EventHandler(this.btnFlightApp_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnFlightApp);
             this.Controls.Add(this.btnDialog);
             this.Controls.Add(this.btnRadio);
             this.Controls.Add(this.btnDate);
@@ -165,6 +180,7 @@
         private System.Windows.Forms.Button btnDate;
         private System.Windows.Forms.Button btnRadio;
         private System.Windows.Forms.Button btnDialog;
+        private System.Windows.Forms.Button btnFlightApp;
     }
 }
 

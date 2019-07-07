@@ -68,5 +68,12 @@ namespace Login
             DialogBox dialogBox = new DialogBox();
             dialogBox.Show();
         }
+
+        private void btnFlightApp_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FlightBooking flightBooking = new FlightBooking();
+            flightBooking.Show();
+        }
     }
 }
