@@ -61,5 +61,12 @@ namespace Login
             Radio radio = new Radio();
             radio.Show();
         }
+
+        private void btnDialog_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DialogBox dialogBox = new DialogBox();
+            dialogBox.Show();
+        }
     }
 }

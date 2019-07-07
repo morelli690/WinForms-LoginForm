@@ -35,6 +35,7 @@
             this.btnSignIn = new System.Windows.Forms.Button();
             this.btnDate = new System.Windows.Forms.Button();
             this.btnRadio = new System.Windows.Forms.Button();
+            this.btnDialog = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblHello
@@ -120,11 +121,25 @@
             this.btnRadio.UseVisualStyleBackColor = false;
             this.btnRadio.Click += new System.EventHandler(this.btnRadio_Click);
             // 
+            // btnDialog
+            // 
+            this.btnDialog.AutoSize = true;
+            this.btnDialog.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnDialog.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDialog.Location = new System.Drawing.Point(536, 165);
+            this.btnDialog.Name = "btnDialog";
+            this.btnDialog.Size = new System.Drawing.Size(163, 40);
+            this.btnDialog.TabIndex = 7;
+            this.btnDialog.Text = "Dialog Box";
+            this.btnDialog.UseVisualStyleBackColor = false;
+            this.btnDialog.Click += new System.EventHandler(this.btnDialog_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnDialog);
             this.Controls.Add(this.btnRadio);
             this.Controls.Add(this.btnDate);
             this.Controls.Add(this.btnSignIn);
@@ -149,6 +164,7 @@
         private System.Windows.Forms.Button btnSignIn;
         private System.Windows.Forms.Button btnDate;
         private System.Windows.Forms.Button btnRadio;
+        private System.Windows.Forms.Button btnDialog;
     }
 }
 
